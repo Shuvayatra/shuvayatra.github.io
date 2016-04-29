@@ -23,20 +23,29 @@
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <!-- bxSlider CSS file -->
-    <!-- <link href="css/jquery.bxslider.css" rel="stylesheet"> -->
+    <link href="css/jquery.bxslider.css" rel="stylesheet">
 
-    <!-- <script type="text/javascript">
-      $(document).ready(function(){
-        $('.bxslider').bxSlider({
-          mode: fade,
-          captions: true
-        });
-      });
-    </script> -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+    <!-- bxSlider Javascript file -->
+    <script src="js/jquery.bxslider.js"></script>
+
+
 
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
   <!-- Navigation -->
   <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
       <div class="container">
@@ -93,27 +102,44 @@
   </header>
 
   <div class="resources">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-xs-12">
-            <p>The Shuvayatra team takes a data- and evidence-driven approach to addressing migration challenges, and we make every effort to ensure our work is valuable to others in our field. Our team members have contributed to several landmark reports on the issues affecting migrant workers in Asia, which have helped leaders in government and civil society serve the migrant population more effectively. In this spirit of openness and collaboration, we will continue to share the data and insights we gain through the Shuvayatra project.</p>
+    <div class="container">
+      <div class="col-md-6 col-xs-12">
+        <p>The Shuvayatra team takes a data- and evidence-driven approach to addressing migration challenges, and we make every effort to ensure our work is valuable to others in our field. Our team members have contributed to several landmark reports on the issues affecting migrant workers in Asia, which have helped leaders in government and civil society serve the migrant population more effectively. In this spirit of openness and collaboration, we will continue to share the data and insights we gain through the Shuvayatra project.</p>
+      </div>
+      <div class="col-md-5 col-md-offset-1 col-xs-12">
+        <div class="slider-nav">
+          <h3>Explore our publications<h3>
+        </div>
+        <div class="bxslider">
+          <div class="slider-pane">
+            <p>Report: “Labour Migration Trends and Patterns: Bangladesh, India, and Nepal” <a href="https://asiafoundation.org/resources/pdfs/LabourMigrationTrendsandPatternsBangladeshIndiaandNepal2013.pdf"><i class="fa fa-download"></i></a></p>
           </div>
-          <div id="resource-links" class="col-md-4 col-xs-12">
-            <ul style="list-style-type:circle">
+          <div class="slider-pane">
+            <p>Report and data annex: Labor Migration for Employment 2013/2014 <a href="https://asiafoundation.org/resources/pdfs/MigrationReportbyGovernmentofNepal.pdf"><i class="fa fa-download"></i></a></p>
+          </div>
+          <div class="slider-pane">
+            <p>Fact sheet: Our work on the Combatting Trafficking in Persons (CTIP) project <a href="https://www.usaid.gov/sites/default/files/documents/1861/Nepal-DGO-CTIP-July2015.pdf"><i class="fa fa-download"></i></a></p>
+          </div>
+        </div>
+        <div class="slider-control-left col-xs-6">
+          <p><span id="slider-prev"></span></p>
+        </div>
+        <div class="slider-control-right col-xs-6">
+          <p><span id="slider-next"></span></p>
+        </div>
+      </div>
+    </div>
+          <!-- <div id="resource-links" class="col-md-4 col-xs-12">
+            <ul class="bxslider">
               <li>Report: “Labour Migration Trends and Patterns: Bangladesh, India, and Nepal” <a href="https://asiafoundation.org/resources/pdfs/LabourMigrationTrendsandPatternsBangladeshIndiaandNepal2013.pdf"><i class="fa fa-download"></i></a></li>
               <li>Report and data annex: Labor Migration for Employment 2013/2014 <a href="https://asiafoundation.org/resources/pdfs/MigrationReportbyGovernmentofNepal.pdf"><i class="fa fa-download"></i></a></li>
               <li>Fact sheet: Our work on the Combatting Trafficking in Persons (CTIP) project <a href="https://www.usaid.gov/sites/default/files/documents/1861/Nepal-DGO-CTIP-July2015.pdf"><i class="fa fa-download"></i></a></li>
             </ul>
-          </div>
-        </div>
-      </div>
-      <!-- <div class="slider bx-wrapper">
-        <ul class="bxslider">
-          <li><img src="./img/boats.jpg" \></li>
-          <li><img src="./img/terraces.jpg" \></li>
-        </ul>
-      </div> -->
+          </div> -->
   </div>
+
+
+
 
   <div class="interstitial">
   </div>
@@ -149,20 +175,17 @@
         </div>
     </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
-
-    <!-- bxSlider Javascript file -->
-    <script src="js/jquery.bxslider.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    $('.bxslider').bxSlider({
+        mode: 'fade',
+        nextSelector: '#slider-next',
+        prevSelector: '#slider-prev',
+        nextText: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+        prevText: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
+      });
+    });
+    </script>
 
 </body>
 

@@ -30,10 +30,28 @@ h2 {
   padding-top: 10px;
 }
 
-.resources li {
-  font-size: 1.2em;
+.slider-nav h3 {
+  text-align: center;
+}
+
+.slider-control-right p {
+  text-align: right;
+  margin-right: 10%;
+  margin-top: -100px;
+}
+
+.slider-control-left p {
+  text-align: left;
+  margin-left: 5%;
+  margin-top: -100px;
+}
+
+.slider-pane {
+  background: #547C8A;
+  font-size: 1em;
   font-weight: 100;
-  margin-left: -10px;
+  margin: 0 10px 0 5px;
+  padding-bottom: 10px;
   text-align: left;
 }
 
