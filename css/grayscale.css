@@ -4,11 +4,12 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
  @import url(//fonts.googleapis.com/css?family=Work+Sans:400,300,200,500);
+ @import url(https://fonts.googleapis.com/css?family=Khula:300,400,600&subset=devanagari);
 
 body {
     width: 100%;
     height: 100%;
-    font-family: 'Work Sans', 'Helvetica', sans-serif !important;
+    font-family: 'Work Sans', 'Khula', 'Helvetica', sans-serif !important;
     color: #fff;
     background-color: #547C8A;
 }
@@ -93,6 +94,7 @@ a:focus {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #000;
+    font-size: 1.5em;
 }
 
 .navbar-custom .navbar-brand {
