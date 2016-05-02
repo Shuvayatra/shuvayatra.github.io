@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Shuvayatra - The Safe Migration App</title>
+    <title class="translate" key="the_safe_journey_app">Shuvayatra - The Safe Migration App</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -55,7 +55,8 @@
               </button>
               <a class="navbar-brand page-scroll" href=".#page-top">
                 <ul>
-                  <img class="logo" src="img/logo-square.png"\> Shuvayatra
+                  <img class="logo" src="img/logo-square.png"\>
+                  <span class="translate">Shuvayatra</span>
                 </ul>
               </a>
           </div>
@@ -68,19 +69,19 @@
                       <a href="#page-top"></a>
                   </li>
                   <li>
-                      <a class="page-scroll" href=".#about">About</a>
+                      <a id="aboutlink" class="page-scroll translate" href="/#about">About</a>
                   </li>
                   <!-- <li>
                       <a class="page-scroll" href="#download">Download</a>
                   </li> -->
                   <li>
-                      <a class="page-scroll" href=".#contact">Contact</a>
+                      <a id="contactlink" class="page-scroll translate" href="/#contact">Contact</a>
                   </li>
                   <li>
-                    <a class="" href="/more-info.html">Resources</a>
+                    <a id="resourcelink" class="translate" href="more-info.html">Resources</a>
                   </li>
                   <li>
-                    <a class="" href="#" style="font-size: 20px;">नेपाली</a>
+                    <a class="translatebtn" href="#nepali" onclick="toNepali()" style="font-size: 20px;">नेपाली</a>
                   </li>
               </ul>
           </div>
@@ -94,7 +95,7 @@
           <div class="container">
               <div class="row">
                   <div class="col-md-8 col-md-offset-2">
-                      <h1 class="brand-heading">Resources &amp; Data</h1>
+                      <h1 class="brand-heading translate" key="r_and_d">Resources &amp; Data</h1>
                   </div>
               </div>
           </div>
@@ -104,11 +105,11 @@
   <div class="resources">
     <div class="container">
       <div class="col-md-6 col-xs-12">
-        <p>The Shuvayatra team takes a data- and evidence-driven approach to addressing migration challenges, and we make every effort to ensure our work is valuable to others in our field. Our team members have contributed to several landmark reports on the issues affecting migrant workers in Asia, which have helped leaders in government and civil society serve the migrant population more effectively. In this spirit of openness and collaboration, we will continue to share the data and insights we gain through the Shuvayatra project.</p>
+        <p class="translate" key="the_team">The Shuvayatra team takes a data- and evidence-driven approach to addressing migration challenges, and we make every effort to ensure our work is valuable to others in our field. Our team members have contributed to several landmark reports on the issues affecting migrant workers in Asia, which have helped leaders in government and civil society serve the migrant population more effectively. In this spirit of openness and collaboration, we will continue to share the data and insights we gain through the Shuvayatra project.</p>
       </div>
       <div class="col-md-5 col-md-offset-1 col-xs-12">
         <div class="slider-nav">
-          <h3>Explore our publications<h3>
+          <h3 class="translate" key="explore_publications">Explore our publications<h3>
         </div>
         <div class="bxslider">
           <div class="slider-pane">
@@ -146,13 +147,13 @@
 
   <div class="about-us">
       <div class="container">
-        <h2>Who we are</h2>
+        <h2 class="translate">Who we are</h2>
         <div class="row">
           <div class="col-lg-6 col-xs-12">
-              <p><a href="http://asiafoundation.org">The Asia Foundation (TAF)</a> is an international NGO with offices in 18 Asian countries, including a permanent presence in Kathmandu. In Nepal, the Foundation has been implementing a longstanding Combatting Trafficking in Persons (CTIP) program funded by USAID, aimed at preventing trafficking, protecting survivors, and prosecuting traffickers. In 2014, the Foundation expanded its engagement on addressing labor migration by supporting the Ministry of Labor and Employment to produce the first ever migration status report and has been working with the International Labor Organization and the International Organization for Migration to support the government on the 2014/2015 status report.</p>
+              <p class="translate" key="taf"><a href="http://asiafoundation.org">The Asia Foundation (TAF)</a> is an international NGO with offices in 18 Asian countries, including a permanent presence in Kathmandu. In Nepal, the Foundation has been implementing a longstanding Combatting Trafficking in Persons (CTIP) program funded by USAID, aimed at preventing trafficking, protecting survivors, and prosecuting traffickers. In 2014, the Foundation expanded its engagement on addressing labor migration by supporting the Ministry of Labor and Employment to produce the first ever migration status report and has been working with the International Labor Organization and the International Organization for Migration to support the government on the 2014/2015 status report.</p>
           </div>
           <div class="col-lg-6 col-xs-12">
-            <p><a href="http://nrna.org.np">The Non-Resident Nepali Association (NRNA)</a> is the largest and most prominent umbrella organization of the Nepalese diaspora abroad. NRNA has chapters in 73 countries, including in the main labor destination countries. Through its chapters abroad, NRNA organizes gatherings of Nepali migrants and often acts as an important point of contact in case of emergencies. In Kathmandu, NRNA operates a foreign employment information center in the Labor Village as well as an information desk at the airport, where they provide migrants with information and advice on their way out of Nepal. NRNA also conducts advocacy on behalf of migrant workers with the government of Nepal to strengthen labor migration regulations.</p>
+            <p class="translate" key="nrna"><a href="http://nrna.org.np">The Non-Resident Nepali Association (NRNA)</a> is the largest and most prominent umbrella organization of the Nepalese diaspora abroad. NRNA has chapters in 73 countries, including in the main labor destination countries. Through its chapters abroad, NRNA organizes gatherings of Nepali migrants and often acts as an important point of contact in case of emergencies. In Kathmandu, NRNA operates a foreign employment information center in the Labor Village as well as an information desk at the airport, where they provide migrants with information and advice on their way out of Nepal. NRNA also conducts advocacy on behalf of migrant workers with the government of Nepal to strengthen labor migration regulations.</p>
           </div>
       </div>
     </div>
@@ -186,6 +187,8 @@
       });
     });
     </script>
+    <script src="/js/polyglot.min.js"></script>
+    <script src="/js/translate.js"></script>
 
 </body>
 
