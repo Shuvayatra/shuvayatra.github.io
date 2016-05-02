@@ -64,7 +64,7 @@ $(function() {
         $(item).text(_($(item).text()));
       }
     });
-    $("#aboutlink, #contactlink, #resourcelink").each(function(n, navlink) {
+    $("#aboutlink, #contactlink, .resourcelink").each(function(n, navlink) {
       $(navlink).attr('href', $(navlink).attr('href').replace('/', '/?nepali'));
     });
   };
