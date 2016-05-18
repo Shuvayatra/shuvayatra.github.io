@@ -208,6 +208,7 @@ a:focus {
 
 .intro .intro-body .intro-text {
     font-size: 18px;
+    margin-bottom: 10px;
 }
 
 form {
