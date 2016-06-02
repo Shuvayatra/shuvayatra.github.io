@@ -1,12 +1,12 @@
 $(function() {
-  var lang = 'en';
+  var lang = 'ne';
 
-  if (window.location.href && window.location.href.indexOf('nepali') > -1) {
-    lang = 'ne';
+  if (window.location.href && window.location.href.indexOf('english') > -1) {
+    lang = 'en';
   }
-  if (window.navigator.language && window.navigator.language.split('-')[0] == 'ne') {
-    lang = 'ne';
-  }
+  //if (window.navigator.language && window.navigator.language.split('-')[0] == 'ne') {
+  //  lang = 'ne';
+  //}
 
   var languages = {
     ne: {
@@ -52,7 +52,7 @@ $(function() {
 
   toNepali = function() {
     setTimeout(function() {
-      $(".translatebtn").text("English").attr("href", "?t=" + (new Date() * 1));
+      $(".translatebtn").text("English").attr("href", "?english&t=" + (new Date() * 1));
       $(".translatebtn")[0].onclick = function() {};
     });
     $(".translate").each(function(i, item) {
@@ -65,12 +65,13 @@ $(function() {
         $(item).text(_($(item).text()));
       }
     });
-    $("#aboutlink, #contactlink, .resourcelink").each(function(n, navlink) {
-      $(navlink).attr('href', $(navlink).attr('href').replace('/', '/?nepali'));
-    });
   };
 
   if (lang !== 'en') {
     toNepali();
+  } else {
+    $("#aboutlink, #contactlink, .resourcelink").each(function(n, navlink) {
+      $(navlink).attr('href', $(navlink).attr('href').replace('/', '/?english'));
+    });
   }
 });
