@@ -92,7 +92,9 @@ h2 {
 }
 
 .about-us-logo {
-  height: auto;
+  height: 50px;
+  width: auto;
+  text-align: center;
   margin: 0 10% 50px 10%;
 }
 
